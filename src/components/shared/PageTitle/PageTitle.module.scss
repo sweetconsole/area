@@ -1,0 +1,22 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.title {
+	font-family: variables.$font-family-primary;
+	font-size: 160px;
+	font-weight: variables.$font-weight-regular;
+	line-height: 85%;
+	color: variables.$color-black;
+	letter-spacing: -0.05em;
+
+	@include adaptive.tablet {
+		font-size: 140px;
+		line-height: 80%;
+	}
+
+	@include adaptive.mobile {
+		font-size: 76px;
+		line-height: 85%;
+		letter-spacing: -0.045em;
+	}
+}

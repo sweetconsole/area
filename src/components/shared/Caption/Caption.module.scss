@@ -1,0 +1,20 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.text {
+	font-family: variables.$font-family-accent;
+	font-size: 12px;
+	font-weight: variables.$font-weight-regular;
+	line-height: 140%;
+	color: variables.$color-accent-dark;
+	letter-spacing: -0.01em;
+
+	@include adaptive.tablet {
+		font-size: 11px;
+	}
+
+	@include adaptive.mobile {
+		font-size: 10.5px;
+		letter-spacing: -0.03em;
+	}
+}

@@ -1,0 +1,11 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.text {
+	font-family: variables.$font-family-secondary;
+	font-size: 14px;
+	font-weight: variables.$font-weight-bold;
+	line-height: 140%;
+	color: variables.$color-black;
+	letter-spacing: -0.025em;
+}

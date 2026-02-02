@@ -1,0 +1,15 @@
+@use "../../../styles/adaptive";
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	
+	@include adaptive.tablet {
+		max-width: 720px;
+	}
+
+	@include adaptive.mobile {
+		max-width: 343px;
+	}
+}

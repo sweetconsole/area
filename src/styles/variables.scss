@@ -1,0 +1,30 @@
+
+// Font Families
+$font-family-primary: "Crimson Text", serif;
+$font-family-secondary: "DM Sans", sans-serif;
+$font-family-accent: "Roboto Mono", monospace;
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+
+// General Colors
+$color-white: white;
+$color-black: black;
+
+// Accent Colors
+$color-accent-light: #DFECC6;
+$color-accent-normal: #8E9C78;
+$color-accent-dark: #485C11;
+
+// Primary Colors
+$color-primary-light: #E9E9E9;
+$color-primary-normal: #6f6f6f;
+$color-primary-dark: #929292;
+
+// Adaptive Values
+$not-laptop: 1280px;
+$not-tablet: 800px;

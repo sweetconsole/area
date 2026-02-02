@@ -1,0 +1,40 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 92px;
+	background-color: variables.$color-white;
+}
+
+.logo {
+	font-family: variables.$font-family-secondary;
+	font-size: 30px;
+	font-weight: variables.$font-weight-medium;
+	line-height: 120%;
+	color: variables.$color-black;
+	letter-spacing: -0.05em;
+	cursor: pointer;
+
+	@include adaptive.mobile {
+		letter-spacing: -0.08em;
+	}
+}
+
+.navigation {
+	display: flex;
+	gap: 17px;
+}
+
+.button {
+	background-color: variables.$color-accent-dark;
+
+	.label {
+		color: white;
+	}
+}

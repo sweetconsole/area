@@ -1,0 +1,32 @@
+@use "variables";
+@import 'https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap';
+
+*::selection {
+  color: variables.$color-white;
+  background-color: variables.$color-accent-dark;
+}
+
+body {
+  /* DEV */
+  font-family: "Times New Roman", serif;
+  font-size: 24px;
+  color: red;
+
+  /* DEV */
+
+  background-color: variables.$color-white;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: variables.$color-accent-light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: variables.$color-accent-dark;
+    border: 3px solid  variables.$color-accent-light;
+    border-radius: 20px;
+  }
+}
