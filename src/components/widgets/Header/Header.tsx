@@ -14,7 +14,7 @@ const Header: FC = () => {
 			<nav className={styles.navigation}>
 				{menu.map((link, index) => (
 					<Link className={styles.link} to={link.path} key={index} smooth>
-						<Label text={link.title} />
+						<Label style={styles.link_text} text={link.title} />
 					</Link>
 				))}
 			</nav>

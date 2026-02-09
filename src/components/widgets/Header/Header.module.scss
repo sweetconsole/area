@@ -5,6 +5,7 @@
 	position: sticky;
 	top: 0;
 	left: 0;
+	z-index: 10;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -29,6 +30,20 @@
 .navigation {
 	display: flex;
 	gap: 17px;
+}
+
+.link {
+	cursor: pointer;
+
+	&_text {
+		transition: all .2s ease-in-out;
+	}
+
+	&:hover {
+		.link_text {
+			color: variables.$color-accent-dark;
+		}
+	}
 }
 
 .button {

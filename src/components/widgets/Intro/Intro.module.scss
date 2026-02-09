@@ -1,0 +1,21 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.block {
+	position: relative;
+	margin-top: 100px;
+}
+
+.image {
+	margin: 0 auto;
+}
+
+.background {
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	width: 100%;
+	height: 362px;
+	background-color: variables.$color-accent-normal;
+	border-radius: 30px;
+}
