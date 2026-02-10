@@ -1,0 +1,13 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.image {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 30px;
+
+	@include adaptive.mobile {
+		border-radius: 20px;
+	}
+}

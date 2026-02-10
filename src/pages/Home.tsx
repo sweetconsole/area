@@ -1,5 +1,11 @@
 import { type FC } from "react"
-import { Header, Intro, Partners, Benefits } from "../components/widgets"
+import {
+	Header,
+	Intro,
+	Partners,
+	Benefits,
+	ImageViewer
+} from "../components/widgets"
 import { Container, PageTitle } from "../components/shared"
 
 const Home: FC = () => {
@@ -10,6 +16,7 @@ const Home: FC = () => {
 			<Intro />
 			<Partners />
 			<Benefits />
+			<ImageViewer name={"Mountains"} />
 		</Container>
 	)
 }
