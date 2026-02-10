@@ -4,11 +4,11 @@ import styles from "./Label.module.scss"
 
 interface Props {
 	text?: string
-	style?: string
+	className?: string
 }
 
-const Label: FC<Props> = ({ text, style }) => {
-	return <p className={clsx(styles.text, style)}>{text}</p>
+const Label: FC<Props> = ({ text, className }) => {
+	return <p className={clsx(styles.text, className)}>{text}</p>
 }
 
 export default Label

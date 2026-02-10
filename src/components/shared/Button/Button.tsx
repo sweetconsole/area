@@ -4,11 +4,11 @@ import styles from "./Button.module.scss"
 
 interface Props {
 	children: ReactNode | Array<ReactNode>
-	style?: string
+	className?: string
 }
 
-const Button: FC<Props> = ({ style, children }) => {
-	return <button className={clsx(styles.button, style)}>{children}</button>
+const Button: FC<Props> = ({ children, className }) => {
+	return <button className={clsx(styles.button, className)}>{children}</button>
 }
 
 export default Button

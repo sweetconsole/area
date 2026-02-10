@@ -2,11 +2,11 @@ import { type FC } from "react"
 import type { PictureAssets } from "../../../utils/assets.types.ts"
 
 type PictureProps = {
-	className?: string
 	assets: PictureAssets
+	className?: string
 }
 
-const Picture: FC<PictureProps> = ({ className, assets }) => {
+const Picture: FC<PictureProps> = ({ assets, className }) => {
 	return (
 		<picture>
 			{assets.sources.map((source, index) => (

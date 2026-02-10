@@ -5,12 +5,12 @@ import styles from "./Paragraph.module.scss"
 interface Props {
 	text?: string
 	children?: ReactNode | Array<ReactNode>
-	style?: string
+	className?: string
 }
 
-const Paragraph: FC<Props> = ({ text, children, style }) => {
+const Paragraph: FC<Props> = ({ text, children, className }) => {
 	return (
-		<p className={clsx(styles.text, style)}>{children ? children : text}</p>
+		<p className={clsx(styles.text, className)}>{children ? children : text}</p>
 	)
 }
 

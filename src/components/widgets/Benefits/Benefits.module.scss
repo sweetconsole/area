@@ -1,0 +1,41 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.section {
+	margin-top: 80px;
+}
+
+.caption {
+	margin-bottom: 50px;
+}
+
+.title {
+	margin-bottom: 50px;
+}
+
+.paragraph {
+	margin-bottom: 100px;
+}
+
+.benefits {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.benefit {
+	padding: 40px 40px 40px 0;
+	border-top: 1px solid variables.$color-primary-light;
+}
+
+.benefit_icon {
+	margin-bottom: 24px;
+}
+
+.benefit_title {
+	margin-bottom: 20px;
+}
+
+.benefit_description {
+
+}

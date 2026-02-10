@@ -4,11 +4,11 @@ import styles from "./Caption.module.scss"
 
 interface Props {
 	text: string
-	style?: string
+	className?: string
 }
 
-const Caption: FC<Props> = ({ text, style }) => {
-	return <p className={clsx(styles.text, style)}>{text}</p>
+const Caption: FC<Props> = ({ text, className }) => {
+	return <p className={clsx(styles.text, className)}>{text}</p>
 }
 
 export default Caption

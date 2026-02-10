@@ -5,12 +5,15 @@ import styles from "./PageTitle.module.scss"
 interface Props {
 	text: string
 	textAlign?: CSSProperties["textAlign"]
-	style?: string
+	className?: string
 }
 
-const PageTitle: FC<Props> = ({ text, textAlign = "center", style }) => {
+const PageTitle: FC<Props> = ({ text, textAlign = "center", className }) => {
 	return (
-		<h1 className={clsx(styles.title, style)} style={{ textAlign: textAlign }}>
+		<h1
+			className={clsx(styles.title, className)}
+			style={{ textAlign: textAlign }}
+		>
 			{text}
 		</h1>
 	)

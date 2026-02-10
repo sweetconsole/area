@@ -1,5 +1,5 @@
 import { type FC } from "react"
-import { Header, Intro } from "../components/widgets"
+import { Header, Intro, Partners, Benefits } from "../components/widgets"
 import { Container, PageTitle } from "../components/shared"
 
 const Home: FC = () => {
@@ -8,25 +8,8 @@ const Home: FC = () => {
 			<Header />
 			<PageTitle text="Browse everything." />
 			<Intro />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
-			<PageTitle text="Browse everything." />
+			<Partners />
+			<Benefits />
 		</Container>
 	)
 }

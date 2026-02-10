@@ -4,11 +4,11 @@ import styles from "./SectionTitle.module.scss"
 
 interface Props {
 	text: string
-	style?: string
+	className?: string
 }
 
-const SectionTitle: FC<Props> = ({ text, style }) => {
-	return <h2 className={clsx(styles.title, style)}>{text}</h2>
+const SectionTitle: FC<Props> = ({ text, className }) => {
+	return <h2 className={clsx(styles.title, className)}>{text}</h2>
 }
 
 export default SectionTitle
