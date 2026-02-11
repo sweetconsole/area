@@ -14,13 +14,13 @@ const Header: FC = () => {
 			<nav className={styles.navigation}>
 				{menu.map((link, index) => (
 					<Link className={styles.link} to={link.path} key={index} smooth>
-						<Label style={styles.link_text} text={link.title} />
+						<Label className={styles.link_text} text={link.title} />
 					</Link>
 				))}
 			</nav>
 
-			<Button style={styles.button}>
-				<Label style={styles.label} text="Learn More" />
+			<Button className={styles.button}>
+				<Label className={styles.label} text="Learn More" />
 			</Button>
 		</header>
 	)

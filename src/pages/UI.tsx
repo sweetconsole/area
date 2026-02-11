@@ -26,7 +26,7 @@ const UI: FC = () => {
 			<br />
 			<Label text="Label" />
 			<br />
-			<Button text="Button" />
+			<Button>Button</Button>
 		</Container>
 	)
 }
