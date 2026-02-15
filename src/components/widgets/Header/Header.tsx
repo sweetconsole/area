@@ -13,7 +13,13 @@ const Header: FC = () => {
 
 			<nav className={styles.navigation}>
 				{menu.map((link, index) => (
-					<Link className={styles.link} to={link.path} key={index} smooth>
+					<Link
+						className={styles.link}
+						to={link.path}
+						key={index}
+						smooth
+						offset={-100}
+					>
 						<Label className={styles.link_text} text={link.title} />
 					</Link>
 				))}

@@ -1,4 +1,5 @@
 export { default as Benefits } from "./Benefits/Benefits.tsx"
+export { default as BigPicture } from "./BigPicture/BigPicture.tsx"
 export { default as Header } from "./Header/Header.tsx"
 export { default as ImageViewer } from "./ImageViewer/ImageViewer.tsx"
 export { default as Intro } from "./Intro/Intro.tsx"

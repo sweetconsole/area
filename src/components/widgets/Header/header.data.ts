@@ -6,7 +6,7 @@ export type Link = {
 export const menu: Array<Link> = [
 	{
 		title: "Benefits",
-		path: "/"
+		path: "benefits"
 	},
 	{
 		title: "Specifications",

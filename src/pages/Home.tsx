@@ -4,7 +4,8 @@ import {
 	Intro,
 	Partners,
 	Benefits,
-	ImageViewer
+	ImageViewer,
+	BigPicture
 } from "../components/widgets"
 import { Container, PageTitle } from "../components/shared"
 
@@ -17,6 +18,7 @@ const Home: FC = () => {
 			<Partners />
 			<Benefits />
 			<ImageViewer name={"Mountains"} />
+			<BigPicture />
 		</Container>
 	)
 }

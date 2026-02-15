@@ -12,7 +12,7 @@ import { benefits } from "./benefits.ts"
 
 const Benefits: FC = () => {
 	return (
-		<section className={styles.section}>
+		<section className={styles.section} id="benefits">
 			<Caption className={styles.caption} text="Benefits" />
 			<SectionTitle className={styles.title} text="We’ve cracked the code." />
 			<Paragraph className={styles.paragraph}>

@@ -1,0 +1,45 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	align-items: center;
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	align-items: flex-start;
+}
+
+.features {
+
+}
+
+.feature {
+	display: flex;
+	gap: 30px;
+	padding: 20px 80px 20px 0;
+	border-top: 1px solid variables.$color-primary-light;
+}
+
+.feature_number {
+	font-weight: variables.$font-weight-bold;
+}
+
+.feature_text {
+	color: variables.$color-black;
+}
+
+.image {
+	border-radius: 30px;
+
+	@include adaptive.mobile {
+		border-radius: 20px;
+	}
+}
