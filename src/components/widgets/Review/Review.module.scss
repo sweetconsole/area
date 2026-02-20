@@ -1,0 +1,39 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	align-items: center;
+	margin-bottom: 120px;
+}
+
+.photo {
+	border-radius: 30px;
+
+	@include adaptive.mobile {
+		border-radius: 20px;
+	}
+}
+
+.info {
+	padding-left: 50px;
+}
+
+.review {
+	margin-bottom: 50px;
+	font-size: 40px;
+	line-height: 105%;
+	color: variables.$color-black;
+	letter-spacing: -0.04em;
+}
+
+.author {
+	margin-bottom: 8px;
+	color: variables.$color-black;
+}
+
+.profession {
+
+}

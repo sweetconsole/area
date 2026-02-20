@@ -1,14 +1,14 @@
 export const Image = {
 	attributes: {
-		src: "./images/big_picture_laptop.jpg"
+		src: "./images/big_picture/big_picture_laptop.jpg"
 	},
 	sources: [
 		{
-			srcSet: "./images/big_picture_mobile.jpg",
+			srcSet: "./images/big_picture/big_picture_mobile.jpg",
 			media: "(max-width: 800px)"
 		},
 		{
-			srcSet: "./images/big_picture_tablet.jpg",
+			srcSet: "./images/big_picture/big_picture_tablet.jpg",
 			media: "(max-width: 1200px)"
 		}
 	]

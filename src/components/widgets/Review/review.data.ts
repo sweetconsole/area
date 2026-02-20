@@ -1,16 +1,16 @@
 import type { PictureAssets } from "../../../utils/assets.types.ts"
 
-export const IntroImage: PictureAssets = {
+export const Photo: PictureAssets = {
 	attributes: {
-		src: "/images/intro/intro_laptop.png"
+		src: "/images/review/photo_laptop.jpg"
 	},
 	sources: [
 		{
-			srcSet: "/images/intro/intro_mobile.png",
+			srcSet: "/images/review/photo_mobile.jpg",
 			media: "(max-width: 800px)"
 		},
 		{
-			srcSet: "/images/intro/intro_tablet.png",
+			srcSet: "/images/review/photo_tablet.jpg",
 			media: "(max-width: 1200px)"
 		}
 	]
