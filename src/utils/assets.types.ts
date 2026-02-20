@@ -8,5 +8,5 @@ export type PictureAssets = {
 		src: string
 		alt?: string
 	}
-	sources: Array<Source>
+	sources?: Array<Source>
 }

@@ -15,7 +15,7 @@ const BigPicture: FC = () => {
 
 				<ul className={styles.features}>
 					{features.map((feature, index) => (
-						<li className={styles.feature}>
+						<li className={styles.feature} key={index}>
 							<Paragraph className={styles.feature_number}>
 								0{index + 1}
 							</Paragraph>

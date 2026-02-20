@@ -1,0 +1,103 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.section {
+	margin-bottom: 120px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	align-items: center;
+	padding: 80px 240px;
+	text-align: center;
+}
+
+.plans {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.plan {
+	position: relative;
+	background-color: variables.$color-white;
+	border-radius: 20px;
+
+	&:nth-child(2) {
+		z-index: 1;
+		transform: scale(1.05);
+
+		&::before {
+			opacity: 1;
+		}
+
+		.plan_title {
+			color: variables.$color-black;
+		}
+	}
+
+	&::before {
+		position: absolute;
+		top: -1px;
+		left: -1px;
+		display: block;
+		width: calc(100% + 2px);
+		height: calc(100% + 1px);
+		pointer-events: none;
+		content: "";
+		border: 2px solid variables.$color-primary-light;
+		border-radius: 20px;
+		box-shadow: 0 2px 8px 0 rgb(0 0 0 / 8%);
+		opacity: 0;
+		transition: all .2s ease-in-out;
+	}
+
+	&:first-of-type ul {
+		border-left-width: 2px;
+	}
+
+	&:last-child ul {
+		border-right-width: 2px;
+	}
+}
+
+.plan_title {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	font-family: variables.$font-family-secondary;
+	font-size: 25px;
+	font-weight: variables.$font-weight-medium;
+	line-height: 120%;
+	color: variables.$color-primary-normal;
+	text-align: center;
+	letter-spacing: -0.08em;
+	border-bottom: 2px solid variables.$color-primary-dark;
+}
+
+.plan_features {
+	border: 1px solid variables.$color-primary-light;
+	border-bottom-width: 2px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.plan_feature {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	padding: 30px;
+	border-bottom: 1px solid variables.$color-primary-light;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.plan_icon {
+
+}
+
+.plan_text {
+	color: variables.$color-black;
+}

@@ -9,7 +9,7 @@ type PictureProps = {
 const Picture: FC<PictureProps> = ({ assets, className }) => {
 	return (
 		<picture>
-			{assets.sources.map((source, index) => (
+			{assets.sources?.map((source, index) => (
 				<source {...source} key={index} />
 			))}
 

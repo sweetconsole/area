@@ -10,7 +10,7 @@ export const menu: Array<Link> = [
 	},
 	{
 		title: "Specifications",
-		path: "/"
+		path: "specifications"
 	},
 	{
 		title: "How-to",
