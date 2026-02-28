@@ -1,5 +1,5 @@
 import { Picture } from "../../shared"
-import { type ImageNames, images } from "./imageViewer.ts"
+import { type ImageNames, images } from "./imageViewer.data.ts"
 import styles from "./ImageViewer.module.scss"
 
 interface Props {

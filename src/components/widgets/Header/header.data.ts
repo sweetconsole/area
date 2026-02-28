@@ -14,10 +14,10 @@ export const menu: Array<Link> = [
 	},
 	{
 		title: "How-to",
-		path: "/"
+		path: "how-to"
 	},
 	{
 		title: "Contact Us",
-		path: "/"
+		path: "contact-us"
 	}
 ]

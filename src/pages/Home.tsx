@@ -7,7 +7,9 @@ import {
 	ImageViewer,
 	BigPicture,
 	Specifications,
-	Review
+	Review,
+	HowItWorks,
+	ContactUs
 } from "../components/widgets"
 import { Container, PageTitle } from "../components/shared"
 
@@ -23,6 +25,9 @@ const Home: FC = () => {
 			<BigPicture />
 			<Specifications />
 			<Review />
+			<HowItWorks />
+			<ImageViewer name={"Hills"} />
+			<ContactUs />
 		</Container>
 	)
 }
