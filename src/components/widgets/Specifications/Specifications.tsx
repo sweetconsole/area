@@ -30,6 +30,8 @@ const Specifications: FC = () => {
 					<li className={styles.plan} key={index}>
 						<h3 className={styles.plan_title}>{plan.title}</h3>
 
+						<div className={styles.plan_line}></div>
+
 						<ul className={styles.plan_features}>
 							{plan.features.map((feature, key) => (
 								<li className={styles.plan_feature} key={key}>
