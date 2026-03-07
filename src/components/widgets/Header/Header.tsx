@@ -1,33 +1,37 @@
 import { type FC } from "react"
+import { clsx } from "clsx"
 import { Link } from "react-scroll"
-import { Button, Label } from "../../shared"
+import { useNavigation } from "../../../hooks/useNavigation.ts"
+import { useScrollPosition } from "../../../hooks/useScrollPosition.ts"
+import { Button, Container, Label, NavigationLink } from "../../shared"
 import styles from "./Header.module.scss"
-import { menu } from "./header.data.ts"
 
 const Header: FC = () => {
+	const { headerLinks } = useNavigation()
+	const scrollPosition = useScrollPosition()
+
 	return (
-		<header className={styles.header}>
-			<Link className={styles.logo} to="root" smooth>
-				Area
-			</Link>
+		<header
+			className={clsx(
+				scrollPosition > 0 && styles.header_scrolled,
+				styles.header
+			)}
+		>
+			<Container className={styles.container}>
+				<Link className={styles.logo} to="root" smooth>
+					Area
+				</Link>
 
-			<nav className={styles.navigation}>
-				{menu.map((link, index) => (
-					<Link
-						className={styles.link}
-						to={link.path}
-						key={index}
-						smooth
-						offset={-100}
-					>
-						<Label className={styles.link_text} text={link.title} />
-					</Link>
-				))}
-			</nav>
+				<nav className={styles.navigation}>
+					{headerLinks.map((link, index) => (
+						<NavigationLink key={index} {...link} />
+					))}
+				</nav>
 
-			<Button className={styles.button}>
-				<Label className={styles.label} text="Learn More" />
-			</Button>
+				<Button className={styles.button}>
+					<Label className={styles.label} text="Learn More" />
+				</Button>
+			</Container>
 		</header>
 	)
 }

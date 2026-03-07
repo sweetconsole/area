@@ -9,26 +9,31 @@ import {
 	Specifications,
 	Review,
 	HowItWorks,
-	ContactUs
+	ContactUs,
+	Footer
 } from "../components/widgets"
 import { Container, PageTitle } from "../components/shared"
 
 const Home: FC = () => {
 	return (
-		<Container>
+		<>
 			<Header />
-			<PageTitle text="Browse everything." />
-			<Intro />
-			<Partners />
-			<Benefits />
-			<ImageViewer name={"Mountains"} />
-			<BigPicture />
-			<Specifications />
-			<Review />
-			<HowItWorks />
-			<ImageViewer name={"Hills"} />
-			<ContactUs />
-		</Container>
+
+			<Container>
+				<PageTitle text="Browse everything." />
+				<Intro />
+				<Partners />
+				<Benefits />
+				<ImageViewer name={"Mountains"} />
+				<BigPicture />
+				<Specifications />
+				<Review />
+				<HowItWorks />
+				<ImageViewer name={"Hills"} />
+				<ContactUs />
+				<Footer />
+			</Container>
+		</>
 	)
 }
 

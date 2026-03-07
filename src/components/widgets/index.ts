@@ -1,6 +1,7 @@
 export { default as Benefits } from "./Benefits/Benefits.tsx"
 export { default as BigPicture } from "./BigPicture/BigPicture.tsx"
 export { default as ContactUs } from "./ContactUs/ContactUs.tsx"
+export { default as Footer } from "./Footer/Footer.tsx"
 export { default as Header } from "./Header/Header.tsx"
 export { default as HowItWorks } from "./HowItWorks/HowItWorks.tsx"
 export { default as ImageViewer } from "./ImageViewer/ImageViewer.tsx"

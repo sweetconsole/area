@@ -1,0 +1,42 @@
+@use "../../../styles/adaptive";
+@use "../../../styles/variables";
+
+.footer {
+	padding-top: 80px;
+	padding-bottom: 40px;
+	border-top: 1px solid variables.$color-primary-light;
+}
+
+.navigation {
+	display: flex;
+	gap: 27px;
+	align-items: center;
+	margin-bottom: 90px;
+}
+
+.info {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.brand {
+	display: flex;
+	align-items: flex-end;
+}
+
+.logo {
+	margin-right: 40px;
+}
+
+.company {
+	margin-right: 16px;
+}
+
+.years {
+
+}
+
+.copyright {
+
+}
