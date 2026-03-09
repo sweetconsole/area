@@ -12,11 +12,26 @@
 	align-items: center;
 	padding: 80px 240px;
 	text-align: center;
+
+	@include adaptive.tablet {
+		padding: 80px 80px 100px;
+	}
+
+	@include adaptive.mobile {
+		padding: 80px 0 100px;
+	}
 }
 
 .plans {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(240px, 1fr));
+
+
+	@include adaptive.mobile {
+		padding: 6px 0;
+		overflow: scroll hidden;
+		scrollbar-width: none;
+	}
 }
 
 .plan {
@@ -32,6 +47,20 @@
 			color: variables.$color-black;
 			border: 2px solid;
 			border-color: variables.$color-primary-light variables.$color-primary-light transparent variables.$color-primary-light;
+		}
+	}
+
+	@include adaptive.tablet {
+		&:nth-child(2) {
+			z-index: 1;
+			transform: scale(1.05);
+		}
+	}
+
+	@include adaptive.mobile {
+		&:nth-child(2) {
+			z-index: 1;
+			transform: scale(1.025);
 		}
 	}
 }
@@ -72,6 +101,10 @@
 
 	&:last-child {
 		border-bottom: none;
+	}
+
+	@include adaptive.tablet {
+		padding: 20px;
 	}
 }
 

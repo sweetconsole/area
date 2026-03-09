@@ -18,7 +18,7 @@ export const partners: Array<Partner> = [
 				},
 				{
 					srcSet: "/images/partners/partner_1_tablet.svg",
-					media: "(max-width: 1200px)"
+					media: "(max-width: 1280px)"
 				}
 			]
 		}
@@ -36,7 +36,7 @@ export const partners: Array<Partner> = [
 				},
 				{
 					srcSet: "/images/partners/partner_2_tablet.svg",
-					media: "(max-width: 1200px)"
+					media: "(max-width: 1280px)"
 				}
 			]
 		}
@@ -54,7 +54,7 @@ export const partners: Array<Partner> = [
 				},
 				{
 					srcSet: "/images/partners/partner_3_tablet.svg",
-					media: "(max-width: 1200px)"
+					media: "(max-width: 1280px)"
 				}
 			]
 		}
@@ -72,7 +72,7 @@ export const partners: Array<Partner> = [
 				},
 				{
 					srcSet: "/images/partners/partner_4_tablet.svg",
-					media: "(max-width: 1200px)"
+					media: "(max-width: 1280px)"
 				}
 			]
 		}
@@ -90,7 +90,7 @@ export const partners: Array<Partner> = [
 				},
 				{
 					srcSet: "/images/partners/partner_5_tablet.svg",
-					media: "(max-width: 1200px)"
+					media: "(max-width: 1280px)"
 				}
 			]
 		}
@@ -108,7 +108,7 @@ export const partners: Array<Partner> = [
 				},
 				{
 					srcSet: "/images/partners/partner_6_tablet.svg",
-					media: "(max-width: 1200px)"
+					media: "(max-width: 1280px)"
 				}
 			]
 		}

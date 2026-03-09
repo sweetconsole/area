@@ -10,10 +10,15 @@
 	background-color: variables.$color-white;
 	border-bottom: 1px solid transparent;
 	transition: all .2s ease-in-out;
+
+	@include adaptive.mobile {
+		height: 64px;
+	}
 }
 
 .header_scrolled {
 	border-bottom-color: variables.$color-primary-light;
+	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%);
 }
 
 .container {
@@ -40,6 +45,19 @@
 .navigation {
 	display: flex;
 	gap: 17px;
+
+	@include adaptive.mobile {
+		display: none;
+		flex-direction: column;
+		gap: 18px;
+		align-items: center;
+	}
+}
+
+.navigation_active {
+	display: flex;
+	pointer-events: auto;
+	opacity: 1;
 }
 
 .button {
@@ -47,5 +65,108 @@
 
 	.label {
 		color: white;
+	}
+
+	@include adaptive.mobile {
+		position: absolute;
+		bottom: 100px;
+		left: 50%;
+		display: none;
+		width: calc(100% - 32px);
+		transform: translateX(-50%);
+	}
+}
+
+/* MOBILE */
+.navigation_mobile {
+	position: fixed;
+	top: 64px;
+	left: 0;
+	z-index: 9;
+	display: none;
+	flex-direction: column;
+	gap: 18px;
+	align-items: center;
+	width: 100vw;
+	height: calc(100vh - 64px);
+	padding-top: 100px;
+	pointer-events: none;
+	background-color: white;
+	opacity: 0;
+	transition: all .2s ease-in-out;
+
+	&_active {
+		display: flex;
+		pointer-events: auto;
+		opacity: 1;
+	}
+
+	.navigation {
+		display: flex;
+
+		& p {
+			font-size: 36px;
+		}
+	}
+
+	.button {
+		display: block;
+	}
+}
+
+.hamburger {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 24px;
+	height: 24px;
+	padding: 3px;
+	background-color: transparent;
+	border: none;
+
+	&_active {
+		.bar {
+			&:nth-child(1) {
+				top: 11px;
+				left: 2px;
+				width: 20px;
+				transform: rotate(45deg);
+			}
+
+			&:nth-child(2) {
+				opacity: 0;
+				transform: scale(0);
+			}
+
+			&:nth-child(3) {
+				top: 11px;
+				left: 2px;
+				width: 20px;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+.bar {
+	position: absolute;
+	left: 3px;
+	width: 18px;
+	height: 2px;
+	background-color: variables.$color-black;
+	border-radius: 1px;
+	transition: all 0.3s ease-in-out;
+
+	&:nth-child(1) {
+		top: 5px;
+	}
+
+	&:nth-child(2) {
+		top: 11px;
+	}
+
+	&:nth-child(3) {
+		top: 17px;
 	}
 }

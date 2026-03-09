@@ -15,8 +15,10 @@ const Review: FC = () => {
 					without it.”
 				</p>
 
-				<Paragraph className={styles.author}>John Smith</Paragraph>
-				<Caption className={styles.profession} text="Head of Data" />
+				<div className={styles.author}>
+					<Paragraph className={styles.author_name}>John Smith</Paragraph>
+					<Caption className={styles.profession} text="Head of Data" />
+				</div>
 			</div>
 		</section>
 	)

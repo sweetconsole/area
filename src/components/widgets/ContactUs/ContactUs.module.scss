@@ -10,6 +10,16 @@
 	padding: 0 300px;
 	margin: 160px 0 120px;
 	text-align: center;
+
+	@include adaptive.tablet {
+		padding: 0 100px;
+		margin: 120px 0;
+	}
+
+	@include adaptive.mobile {
+		padding: 0;
+		margin: 120px 0;
+	}
 }
 
 .button {

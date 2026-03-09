@@ -16,7 +16,7 @@ const HowItWorks: FC = () => {
 
 			<ul className={styles.steps}>
 				{steps.map((step, index) => (
-					<li className={styles.step}>
+					<li className={styles.step} key={index}>
 						<h3 className={styles.step_count}>0{index + 1}</h3>
 						<CardTitle className={styles.step_title} text={step.title} />
 						<Paragraph className={styles.step_description}>

@@ -8,6 +8,12 @@
 	align-items: center;
 	margin-top: 120px;
 	margin-bottom: 120px;
+
+	@include adaptive.tablet {
+		display: flex;
+		flex-direction: column;
+		gap: 70px;
+	}
 }
 
 .info {
@@ -38,6 +44,10 @@
 
 .image {
 	border-radius: 30px;
+
+	@include adaptive.tablet {
+		width: 100%;
+	}
 
 	@include adaptive.mobile {
 		border-radius: 20px;

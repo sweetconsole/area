@@ -11,7 +11,7 @@ export const Photo: PictureAssets = {
 		},
 		{
 			srcSet: "/images/review/photo_tablet.jpg",
-			media: "(max-width: 1200px)"
+			media: "(max-width: 1280px)"
 		}
 	]
 }

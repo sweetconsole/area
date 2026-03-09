@@ -1,4 +1,4 @@
-import { type FC } from "react"
+import { type FC, useState } from "react"
 import { clsx } from "clsx"
 import { Link } from "react-scroll"
 import { useNavigation } from "../../../hooks/useNavigation.ts"
@@ -9,6 +9,17 @@ import styles from "./Header.module.scss"
 const Header: FC = () => {
 	const { headerLinks } = useNavigation()
 	const scrollPosition = useScrollPosition()
+	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen)
+		document.body.style.overflow = isMenuOpen ? "visible" : "hidden"
+	}
+
+	const closeMenu = () => {
+		setIsMenuOpen(false)
+		document.body.style.overflow = "visible"
+	}
 
 	return (
 		<header
@@ -31,6 +42,37 @@ const Header: FC = () => {
 				<Button className={styles.button}>
 					<Label className={styles.label} text="Learn More" />
 				</Button>
+
+				<div
+					className={clsx(
+						styles.navigation_mobile,
+						isMenuOpen && styles.navigation_mobile_active
+					)}
+				>
+					<nav className={styles.navigation}>
+						{headerLinks.map((link, index) => (
+							<NavigationLink key={index} onClick={closeMenu} {...link} />
+						))}
+					</nav>
+
+					<Button className={styles.button}>
+						<Label className={styles.label} text="Learn More" />
+					</Button>
+				</div>
+
+				<button
+					className={clsx(
+						styles.hamburger,
+						isMenuOpen && styles.hamburger_active
+					)}
+					onClick={toggleMenu}
+					aria-expanded={isMenuOpen}
+					aria-label={isMenuOpen ? "Закрыть меню" : "Открыть меню"}
+				>
+					<div className={styles.bar}></div>
+					<div className={styles.bar}></div>
+					<div className={styles.bar}></div>
+				</button>
 			</Container>
 		</header>
 	)

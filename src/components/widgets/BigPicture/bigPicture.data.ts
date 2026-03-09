@@ -9,7 +9,7 @@ export const Image = {
 		},
 		{
 			srcSet: "./images/big_picture/big_picture_tablet.jpg",
-			media: "(max-width: 1200px)"
+			media: "(max-width: 1280px)"
 		}
 	]
 }

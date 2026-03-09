@@ -12,7 +12,7 @@ export const images: Record<string, PictureAssets> = {
 			},
 			{
 				srcSet: "./images/photos/photo_1_tablet.png",
-				media: "(max-width: 1200px)"
+				media: "(max-width: 1280px)"
 			}
 		]
 	},
@@ -27,7 +27,7 @@ export const images: Record<string, PictureAssets> = {
 			},
 			{
 				srcSet: "./images/photos/photo_2_tablet.png",
-				media: "(max-width: 1200px)"
+				media: "(max-width: 1280px)"
 			}
 		]
 	}

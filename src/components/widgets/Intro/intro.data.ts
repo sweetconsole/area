@@ -11,7 +11,7 @@ export const IntroImage: PictureAssets = {
 		},
 		{
 			srcSet: "/images/intro/intro_tablet.png",
-			media: "(max-width: 1200px)"
+			media: "(max-width: 1280px)"
 		}
 	]
 }

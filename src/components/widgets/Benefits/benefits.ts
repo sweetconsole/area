@@ -22,7 +22,7 @@ export const benefits: Array<Benefit> = [
 				},
 				{
 					srcSet: "/images/benefits/benefit_1_tablet.svg",
-					media: "(max-width: 1200px)"
+					media: "(max-width: 1280px)"
 				}
 			]
 		}
@@ -42,7 +42,7 @@ export const benefits: Array<Benefit> = [
 				},
 				{
 					srcSet: "/images/benefits/benefit_2_tablet.svg",
-					media: "(max-width: 1200px)"
+					media: "(max-width: 1280px)"
 				}
 			]
 		}
@@ -62,7 +62,7 @@ export const benefits: Array<Benefit> = [
 				},
 				{
 					srcSet: "/images/benefits/benefit_3_tablet.svg",
-					media: "(max-width: 1200px)"
+					media: "(max-width: 1280px)"
 				}
 			]
 		}
@@ -82,7 +82,7 @@ export const benefits: Array<Benefit> = [
 				},
 				{
 					srcSet: "/images/benefits/benefit_4_tablet.svg",
-					media: "(max-width: 1200px)"
+					media: "(max-width: 1280px)"
 				}
 			]
 		}

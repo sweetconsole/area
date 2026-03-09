@@ -7,6 +7,12 @@
 	gap: 20px;
 	align-items: center;
 	margin-bottom: 200px;
+
+	@include adaptive.tablet {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
 }
 
 .photo {
@@ -19,6 +25,10 @@
 
 .info {
 	padding-left: 50px;
+
+	@include adaptive.tablet {
+		padding-left: 0;
+	}
 }
 
 .review {
@@ -30,7 +40,16 @@
 }
 
 .author {
+	gap: 8px;
+	align-items: center;
 	margin-bottom: 8px;
+
+	@include adaptive.mobile {
+		display: flex;
+	}
+}
+
+.author_name {
 	color: variables.$color-black;
 }
 

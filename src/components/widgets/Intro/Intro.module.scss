@@ -18,4 +18,12 @@
 	height: 362px;
 	background-color: variables.$color-accent-normal;
 	border-radius: 30px;
+
+	@include adaptive.tablet {
+		border-radius: 23px;
+	}
+
+	@include adaptive.mobile {
+		border-radius: 23px;
+	}
 }

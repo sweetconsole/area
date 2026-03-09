@@ -10,12 +10,23 @@
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 80px;
+
+	@include adaptive.mobile {
+		flex-direction: column;
+		gap: 40px;
+		align-items: flex-start;
+	}
 }
 
 .steps {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(240px, 1fr));
 	gap: 20px;
+
+	@include adaptive.mobile {
+		overflow-x: scroll;
+		scrollbar-width: none;
+	}
 }
 
 .step {
