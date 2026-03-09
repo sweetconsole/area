@@ -61,6 +61,10 @@
 }
 
 .button {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	justify-content: center;
 	background-color: variables.$color-accent-dark;
 
 	.label {
@@ -110,13 +114,13 @@
 	}
 
 	.button {
-		display: block;
+		display: flex;
 	}
 }
 
 .hamburger {
 	position: relative;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: space-evenly;
 	width: 24px;
@@ -146,6 +150,10 @@
 				transform: rotate(-45deg);
 			}
 		}
+	}
+
+	@include adaptive.mobile {
+		display: flex;
 	}
 }
 

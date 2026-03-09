@@ -1,6 +1,7 @@
 import { type FC, useState } from "react"
 import { clsx } from "clsx"
 import { Link } from "react-scroll"
+import Arrow from "/images/arrow.svg"
 import { useNavigation } from "../../../hooks/useNavigation.ts"
 import { useScrollPosition } from "../../../hooks/useScrollPosition.ts"
 import { Button, Container, Label, NavigationLink } from "../../shared"
@@ -41,6 +42,7 @@ const Header: FC = () => {
 
 				<Button className={styles.button}>
 					<Label className={styles.label} text="Learn More" />
+					<img className={styles.button_icon} src={Arrow} alt=">" />
 				</Button>
 
 				<div
@@ -57,6 +59,7 @@ const Header: FC = () => {
 
 					<Button className={styles.button}>
 						<Label className={styles.label} text="Learn More" />
+						<img className={styles.button_icon} src={Arrow} alt=">" />
 					</Button>
 				</div>
 
